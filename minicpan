@@ -1,0 +1,3 @@
+local:  /opt/cpan/minicpan/
+remote: http://cpan.mirrors.uk2.net/
+exact_mirror: 1
