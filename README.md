@@ -4,6 +4,7 @@
 
 The file permissions in the volume need to be fixed up initially.
 
+    docker-compose build
     docker-compose run --rm -u root cpan-mini chown -R cpan.cpan \
         /opt/cpan/minicpan
 
