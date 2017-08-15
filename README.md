@@ -46,4 +46,4 @@ If you're wondering where the files for your mirror are you can run inspect
 to find out.
 
     docker inspect cpanmirrordocker_nginx_1 \
-        --format '{{ range .Mounts }}{{ .Source }}{{ end }}'
+        --format '{{ range .Mounts }}{{ if eq .Destination "/opt/cpan/minicpan" }}{{ .Source }}{{ end }}{{ end }}'
